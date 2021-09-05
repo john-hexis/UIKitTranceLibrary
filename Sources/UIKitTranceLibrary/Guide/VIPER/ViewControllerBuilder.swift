@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public class ViewControllerBuilder<U:UIViewController>: ViewControllerBuilderPr {
-    public func build() -> U {
-        throw NSException(name: NSExceptionName(rawValue: "NotImplemented"), reason: "This function is not implemented", userInfo: nil)
+    public func build() throws -> U {
+        throw NSException(name: NSExceptionName(rawValue: "NotImplemented"), reason: "This function is not implemented", userInfo: nil) as! Error
     }
 }

@@ -11,6 +11,6 @@ import UIKit
 
 public protocol ViewControllerBuilderPr {
     associatedtype U: UIViewController
-    func build() -> U
+    func build() throws -> U
 }
 #endif
