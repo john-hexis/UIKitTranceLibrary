@@ -10,6 +10,6 @@ import UIKit
 
 public protocol ViewBuilderPr {
     associatedtype U: UIView
-    func build() -> U
+    func build() throws -> U
 }
 #endif
